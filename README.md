@@ -16,3 +16,5 @@ cd maven-project
 4. Package and deploy the project
 
 mvn install
+
+This is an old readme - updates expected soon
