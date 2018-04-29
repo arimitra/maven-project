@@ -28,7 +28,7 @@ payload]]></dw:set-payload>
     </flow>
     <flow name="apadv-maven-projectFlow1">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/message" allowedMethods="GET" doc:name="HTTP"/>
-        <set-payload value="#['Message updated for a new deployment 07:13']" doc:name="Set Payload"/>
+        <set-payload value="#['Message updated for a new deployment 07:15']" doc:name="Set Payload"/>
     </flow>
     <flow name="apadv-maven-projectFlow">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/hello" allowedMethods="GET" doc:name="HTTP"/>
