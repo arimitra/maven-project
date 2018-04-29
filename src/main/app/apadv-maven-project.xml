@@ -14,7 +14,7 @@ http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee
     <db:mysql-config name="MySQL_Configuration" host="mudb.mulesoft-training.com" port="3306" user="mule" password="mule" database="training" doc:name="MySQL Configuration"/>
     <flow name="getinventoryStatusflow">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/inventory" allowedMethods="GET" doc:name="HTTP" metadata:id="559c6331-4483-42f0-a404-c57dbbba2c7f"/>
-        <set-payload value="{&quot;message&quot; : &quot;This message is coming from inventory flow&quot;}" mimeType="application/json" doc:name="Set Payload"/>
+        <set-payload value="{&quot;message&quot; : &quot;This message is coming from inventory flow but need to invoke deployment&quot;}" mimeType="application/json" doc:name="Set Payload"/>
         <dw:transform-message doc:name="Transform Message">
             <dw:set-payload><![CDATA[%dw 1.0
 %output application/json
